@@ -160,10 +160,11 @@ function getValueOfProperty(object, prop) {
 // the current time as a Date object
 
 function makeChatMessage(message, author) {
+  var today = new Date();
 	var object = {};
 	object.message = message;
 	object.author = author;
-	object.Date = {'time': 12};
+	object.timestamp = today;
 	return object;
 }
 
